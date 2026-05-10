@@ -1,6 +1,3 @@
-/* ================================= */
-/* PROJECT 1 : TO DO LIST CRUD */
-/* ================================= */
 
 let tasks = [];
 
@@ -80,10 +77,6 @@ function editTask(id){
 
 
 
-/* ================================= */
-/* PROJECT 2 : COLOR PALETTE */
-/* ================================= */
-
 function randomColor(){
 
     let letters = "0123456789ABCDEF";
@@ -129,11 +122,6 @@ function generatePalette(){
 
 generatePalette();
 
-
-
-/* ================================= */
-/* PROJECT 3 : TABLE GENERATOR */
-/* ================================= */
 
 function generateTable(){
 
