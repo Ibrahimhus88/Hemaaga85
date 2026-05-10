@@ -1,0 +1,274 @@
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
+    background:linear-gradient(to right,#020617,#0f172a,#111827);
+    color:white;
+    min-height:100vh;
+    padding:40px;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.container{
+    width:95%;
+    margin:auto;
+}
+
+/* ========================= */
+/* MAIN TITLE */
+/* ========================= */
+
+h1{
+    text-align:center;
+    font-size:55px;
+    margin-bottom:60px;
+    color:#38bdf8;
+    text-shadow:0 0 20px rgba(56,189,248,0.5);
+}
+
+/* ========================= */
+/* PROJECT BOX */
+/* ========================= */
+
+.project{
+    background:rgba(15,23,42,0.8);
+    border:2px solid rgba(56,189,248,0.3);
+    border-radius:25px;
+    padding:35px;
+    margin-bottom:70px;
+    box-shadow:
+    0 0 20px rgba(0,0,0,0.5),
+    0 0 30px rgba(56,189,248,0.1);
+
+    transition:0.4s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+    box-shadow:
+    0 0 25px rgba(56,189,248,0.2),
+    0 0 50px rgba(56,189,248,0.15);
+}
+
+/* ========================= */
+/* TITLES */
+/* ========================= */
+
+.project h2{
+    margin-bottom:30px;
+    color:#f8fafc;
+    font-size:38px;
+}
+
+/* ========================= */
+/* INPUT */
+/* ========================= */
+
+input{
+    width:70%;
+    padding:16px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    background:#1e293b;
+    color:white;
+    font-size:18px;
+    border:2px solid transparent;
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#38bdf8;
+    box-shadow:0 0 15px rgba(56,189,248,0.4);
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+button{
+    padding:15px 28px;
+    border:none;
+    border-radius:15px;
+    background:linear-gradient(135deg,#0ea5e9,#2563eb);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(59,130,246,0.5);
+}
+
+/* ========================= */
+/* TODO TASKS */
+/* ========================= */
+
+.task{
+    margin-top:20px;
+    background:#1e293b;
+    padding:20px;
+    border-radius:18px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    border-left:6px solid #38bdf8;
+
+    transition:0.3s;
+}
+
+.task:hover{
+    transform:translateX(8px);
+    background:#334155;
+}
+
+.task span{
+    font-size:20px;
+    font-weight:500;
+}
+
+.btns button{
+    margin-left:10px;
+}
+
+/* ========================= */
+/* PALETTE */
+/* ========================= */
+
+.palette{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:35px;
+}
+
+.color-box{
+    width:220px;
+    height:240px;
+    border-radius:22px;
+
+    display:flex;
+    align-items:end;
+    justify-content:center;
+
+    padding-bottom:20px;
+
+    font-size:24px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.4s;
+
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.color-box:hover{
+    transform:
+    translateY(-10px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 30px rgba(255,255,255,0.2);
+}
+
+/* ========================= */
+/* TABLE */
+/* ========================= */
+
+table{
+    width:100%;
+    margin-top:35px;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+th{
+    background:#0284c7;
+    color:white;
+    font-size:22px;
+    padding:20px;
+}
+
+td{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    font-size:19px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+tr:hover td{
+    background:#334155;
+    transition:0.3s;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:40px;
+    }
+
+    .project h2{
+        font-size:28px;
+    }
+
+    input{
+        width:100%;
+        margin-bottom:15px;
+    }
+
+    .palette{
+        justify-content:center;
+    }
+
+    .color-box{
+        width:100%;
+    }
+}
+
+
+.footer{
+    margin-top:80px;
+    text-align:center;
+    padding:25px;
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+
+.footer p{
+    font-size:20px;
+    color:#94a3b8;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+.footer p:hover{
+    color:#38bdf8;
+    text-shadow:0 0 10px rgba(56,189,248,0.5);
+}
